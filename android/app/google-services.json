@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "890299011378",
+    "firebase_url": "https://finder-love-281af-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "finder-love-281af",
+    "storage_bucket": "finder-love-281af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890299011378:android:7089190ed8c2df9a65072b",
+        "android_client_info": {
+          "package_name": "vn.newdev.finder_love"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890299011378-55ef6desjm08jpc0hhdgop17h01qogvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ8kNpMKmsTq4CLQ6NizkcyoJs-KTq6_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890299011378-55ef6desjm08jpc0hhdgop17h01qogvp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "890299011378-n2e04ru84h103eerod83d5f5oue0qnrf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.polvn.chatApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890299011378:android:e39b67c491944f0165072b",
+        "android_client_info": {
+          "package_name": "vn.newdev.finder_love_new"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890299011378-55ef6desjm08jpc0hhdgop17h01qogvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ8kNpMKmsTq4CLQ6NizkcyoJs-KTq6_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890299011378-55ef6desjm08jpc0hhdgop17h01qogvp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "890299011378-n2e04ru84h103eerod83d5f5oue0qnrf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.polvn.chatApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
