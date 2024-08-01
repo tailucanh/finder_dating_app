@@ -132,9 +132,6 @@ class UpdateProfileCubit extends Cubit<UpdateProfileState> {
     }
   }
 
-
-
-
   Future<void> getUserProfileFromRemote() async {
     final user = await userRepository.getUserProfile();
     await loadInitialData(user);
@@ -155,13 +152,6 @@ class UpdateProfileCubit extends Cubit<UpdateProfileState> {
   Future<File?> _cropImage({required BuildContext context, required File imageFile}) async {
     CroppedFile? croppedFile = await ImageCropper().cropImage(
       sourcePath: imageFile.path,
-      aspectRatioPresets: [
-        CropAspectRatioPreset.square,
-        CropAspectRatioPreset.ratio3x2,
-        CropAspectRatioPreset.original,
-        CropAspectRatioPreset.ratio4x3,
-        CropAspectRatioPreset.ratio16x9
-      ],
       compressQuality: 100,
       maxWidth: 500,
       maxHeight: 500,

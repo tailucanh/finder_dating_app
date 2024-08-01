@@ -119,12 +119,12 @@ class AuthRepositoryImpl extends AuthRepository {
           appSign: AppConfig.yourAppSign /*input your AppSign*/,
           userID: userEntity.uidCall,
           userName: userEntity.fullName,
-          androidNotificationConfig: ZegoAndroidNotificationConfig(
+        /*  androidNotificationConfig: ZegoAndroidNotificationConfig(
             channelID: "ZegoUIKit",
             channelName: "Call Notifications",
             sound: "notification",
             icon: "notification_icon",
-          ),
+          ),*/
           plugins: [ZegoUIKitSignalingPlugin()],
         );
         await database

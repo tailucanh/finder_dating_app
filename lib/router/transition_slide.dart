@@ -11,7 +11,7 @@ class TransitionFactory {
     return CustomTransitionPage(
       key: state.pageKey,
       child: child,
-      arguments: state.queryParameters,
+      arguments: state.pathParameters,
       transitionsBuilder: (context, animation, secondaryAnimation, child) =>
           SlideTransition(
               position: animation.drive(

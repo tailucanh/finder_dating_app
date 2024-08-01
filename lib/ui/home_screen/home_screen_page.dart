@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:chat_app/app.dart';
 import 'package:chat_app/config/extentions/String_ext.dart';
 import 'package:chat_app/config/helpers/helpers_database.dart';
@@ -166,7 +165,7 @@ class _HomeScreenChildPageState extends State<HomeScreenChildPage> {
                       colors: const [Color(0xFFFC23C8), Color(0xFFF53462)],
                       state: state.direction == CardSwiperDirection.left,
                       onTap: () {
-                        controller.swipeLeft();
+                        controller.swipe(CardSwiperDirection.left);
                       },
                     ),
                     ItemController(
@@ -209,7 +208,7 @@ class _HomeScreenChildPageState extends State<HomeScreenChildPage> {
                       colors: const [Color(0xFFBAE517), Color(0xFF42BD49)],
                       state: state.direction == CardSwiperDirection.right,
                       onTap: () {
-                        controller.swipeRight();
+                        controller.swipe(CardSwiperDirection.right);
                       },
                     )
                   ],
@@ -304,9 +303,9 @@ class _HomeScreenChildPageState extends State<HomeScreenChildPage> {
                           _cubit.getOne(
                               direction: CardSwiperDirection.right,
                               id: state.listUser?[index].uid ?? "");
-                          controller.swipeRight();
+                          controller.swipe(CardSwiperDirection.right);
                         } else if ((data)['key'] == 'delete') {
-                          controller.swipeLeft();
+                          controller.swipe(CardSwiperDirection.left);
                         }
                       }
                     },
@@ -334,7 +333,6 @@ class _HomeScreenChildPageState extends State<HomeScreenChildPage> {
                 maxAngle: 60,
                 threshold: 100,
                 isLoop: true,
-                direction: CardSwiperDirection.left,
                 cardsCount: state.listUser?.length ?? 0),
           )
               : Column(

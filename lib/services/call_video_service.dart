@@ -20,14 +20,14 @@ void onUserLogin() {
     appSign: AppConfig.yourAppSign /*input your AppSign*/,
     userID: helpersFunctions.callId,
     userName: helpersFunctions.fullName,
-    androidNotificationConfig: ZegoAndroidNotificationConfig(
+   /* androidNotificationConfig: ZegoAndroidNotificationConfig(
       channelID: "ZegoUIKit",
       channelName: "Call Notifications",
       sound: "notification",
       icon: "notification_icon",
-    ),
+    ),*/
     plugins: [ZegoUIKitSignalingPlugin()],
-    controller: callController,
+    //controller: callController,
     requireConfig: (ZegoCallInvitationData data) {
       final config = (data.invitees.length > 1)
           ? ZegoCallType.videoCall == data.type
@@ -42,9 +42,9 @@ void onUserLogin() {
       config.topMenuBarConfig.buttons
           .insert(0, ZegoMenuBarButtonName.minimizingButton);
 
-      config.onError = (ZegoUIKitError error) {
+     /* config.onError = (ZegoUIKitError error) {
         debugPrint('onError:$error');
-      };
+      };*/
 
       return config;
     },
